@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <!-- materialize icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <title>Friend Finder Survey</title>
+</head>
+<body>
+    <div class='container'>
+            <div class='card-panel light-blue lighten-4 col s12 center-align'>
+                <h4><strong>Survey Questions</strong></h4>
+                <div class='card-panel left-align white'>
+                    <h6><strong>Fill out this form to help connect!</strong></h6>
+                    <br>
+                    <input id='name' type='text' class ='validate' required>
+                    <label class='active' for='name'>Name (required)</label>
+                    <input id='photo' type='text' class='validate' required>
+                    <label class='active' for='name'>Link to Photo (required)</label>
+
+                    <h2><strong>Question 1</strong></h2>
+                    <p>A strict observance of the established rules will result in a more boring affair.</p>
+                    <select data-placeholder='' class='browser-default' id='q1'>
+                        <option value="">Select the most applicable</option>
+                        <option value='1'>1 (Strongly Disagree)</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3 (Neutral)</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5 (Strongly Agree)</option>
+                    </select>
+                    <h2><strong>Question 2</strong></h2>
+                    <p>When a tough decision is to be made, you rely more on your feelings than the analysis of the situation.</p>
+                    <select data-placeholder='' class='browser-default' id='q2'>
+                        <option value="">Select the most applicable</option>
+                        <option value='1'>1 (Strongly Disagree)</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3 (Neutral)</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5 (Strongly Agree)</option>
+                    </select>
+                    <h2><strong>Question 3</strong></h2>
+                    <p>You get bored when having to read theoretical texts.</p>
+                    <select data-placeholder='' class='browser-default' id='q3'>
+                        <option value="">Select the most applicable</option>
+                        <option value='1'>1 (Strongly Disagree)</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3 (Neutral)</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5 (Strongly Agree)</option>
+                    </select>
+                    <h2><strong>Question 4</strong></h2>
+                    <p>You enjoy being around people who are more sociable than you.</p>
+                    <select data-placeholder='' class='browser-default' id='q4'>
+                        <option value="">Select the most applicable</option>
+                        <option value='1'>1 (Strongly Disagree)</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3 (Neutral)</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5 (Strongly Agree)</option>
+                    </select>
+                    <h2><strong>Question 5</strong></h2>
+                    <p>You have good control over your desires and temptations.</p>
+                    <select data-placeholder='' class='browser-default' id='q5'>
+                        <option value="">Select the most applicable</option>
+                        <option value='1'>1 (Strongly Disagree)</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3 (Neutral)</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5 (Strongly Agree)</option>
+                    </select>
+                    <h2><strong>Question 6</strong></h2>
+                    <p>You would rather stay in than go out.</p>
+                    <select data-placeholder='' class='browser-default' id='q6'>
+                        <option value="">Select the most applicable</option>
+                        <option value='1'>1 (Strongly Disagree)</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3 (Neutral)</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5 (Strongly Agree)</option>
+                    </select>
+                    <h2><strong>Question 7</strong></h2>
+                    <p>You worry more about today than tomorrow.</p>
+                    <select data-placeholder='' class='browser-default' id='q7'>
+                        <option value="">Select the most applicable</option>
+                        <option value='1'>1 (Strongly Disagree)</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3 (Neutral)</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5 (Strongly Agree)</option>
+                    </select>
+                    <h2><strong>Question 8</strong></h2>
+                    <p>Trump is a pile of shit and to be fair so are most politicians.</p>
+                    <select data-placeholder='' class='browser-default' id='q8'>
+                        <option value="">Select the most applicable</option>
+                        <option value='1'>1 (Strongly Disagree)</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3 (Neutral)</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5 (Strongly Agree)</option>
+                    </select>
+                    <h2><strong>Question 9</strong></h2>
+                    <p>I believe that comedians should be able to say whatever they want so long as they are on the stage.</p>
+                    <select data-placeholder='' class='browser-default' id='q9'>
+                        <option value="">Select the most applicable</option>
+                        <option value='1'>1 (Strongly Disagree)</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3 (Neutral)</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5 (Strongly Agree)</option>
+                    </select>
+                    <h2><strong>Question 10</strong></h2>
+                    <p>Michael Bay (Transformers series) is a great movie director.</p>
+                    <select data-placeholder='' class='browser-default' id='q10'>
+                        <option value="">Select the most applicable</option>
+                        <option value='1'>1 (Strongly Disagree)</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3 (Neutral)</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5 (Strongly Agree)</option>
+                    </select>
+                    <br>
+                    <button type='submit' data-target='modal1' class='waves-effect waves-light btn modal-trigger light-blue darken-1' id='submitButton'>Submit</button>
+                </div>
+    </div>
+    
+    <!-- Materialize Modal Structure -->
+    <div id="modal1" class="modal">
+            <div class="modal-content">
+              <h4>Meet Your New BFF</h4>
+              <h5 id="matchName"></h5>
+              <img id="matchPic" src="" alt="No Image" width = 350px>
+            </div>
+          <div class="modal-footer">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-blue btn-flat">Done</a>
+          </div>
+    </div>
+</div>
+    
+</body>
+</html>
